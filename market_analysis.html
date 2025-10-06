@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ цен на iPhone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 15px;
+        }
+        .summary {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #007bff;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .status-new {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .status-showroom {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-id {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .problem {
+            color: #dc3545;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .market-note {
+            color: #6c757d;
+            font-size: 13px;
+            font-style: italic;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border-left: 3px solid #ffc107;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        .stat-box {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 200px;
+            margin: 10px;
+        }
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Анализ цен на iPhone в Нижнем Новгороде</h1>
+        
+        <div class="summary">
+            <h2>📋 Общая информация</h2>
+            <p><strong>Тема:</strong> Ослабление (Нижний Новгород)</p>
+            <p><strong>Проблема:</strong> Завышенные цены на iPhone в сравнении с рыночными значениями</p>
+            <p><strong>Суть:</strong> Зафиксированы значительные отклонения цены контакта от средних показателей, вплоть до 10 раз для некоторых моделей</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">17</div>
+                <div>Всего товаров</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">10</div>
+                <div>Неадекватные цены</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">7</div>
+                <div>Выше нормы</div>
+            </div>
+        </div>
+        
+        <div class="product-list">
+            <!-- Витринка товары -->
+            <div class="product-card">
+                <div class="status-showroom">Витринка</div>
+                <div class="product-title">iPhone 12, 128 ГБ</div>
+                <div class="product-id">ID: 7496212802</div>
+                <div class="problem">Цена контакта выше нормы</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-showroom">Витринка</div>
+                <div class="product-title">iPhone 13 Pro, 128 ГБ</div>
+                <div class="product-id">ID: 7496423043</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 2 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-showroom">Витринка</div>
+                <div class="product-title">iPhone 13, 128 ГБ</div>
+                <div class="product-id">ID: 4585164027</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 3 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-showroom">Витринка</div>
+                <div class="product-title">iPhone 14 Pro Max, 256 ГБ</div>
+                <div class="product-id">ID: 4264625609</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 3 раза</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-showroom">Витринка</div>
+                <div class="product-title">iPhone 14 Pro, 128 ГБ</div>
+                <div class="product-id">ID: 4552883023</div>
+                <div class="problem">Цена контакта выше нормы</div>
+            </div>
+            
+            <!-- Новые товары -->
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 15 Pro Max, 256 ГБ</div>
+                <div class="product-id">ID: 4265092694</div>
+                <div class="problem">Цена контакта выше нормы</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 15, 128 ГБ</div>
+                <div class="product-id">ID: 4585003240</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 2 раза</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 15, 256 ГБ</div>
+                <div class="product-id">ID: 4265511920</div>
+                <div class="problem">Цена контакта выше нормы</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16 Pro Max, 1 ТБ</div>
+                <div class="product-id">ID: 4297024105</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 2 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16 Pro Max, 256 ГБ</div>
+                <div class="product-id">ID: 4264857740</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 3 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16 Pro Max, 512 ГБ</div>
+                <div class="product-id">ID: 4264814556</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 3 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16 Pro, 128 ГБ</div>
+                <div class="product-id">ID: 4425427355</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 6 раз</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16 Pro, 256 ГБ</div>
+                <div class="product-id">ID: 4425132609</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 5 раз</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16, 128 ГБ</div>
+                <div class="product-id">ID: 4424821423</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 3 раза</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 16, 256 ГБ</div>
+                <div class="product-id">ID: 4424789948</div>
+                <div class="problem">Неадекватная цена контакта, больше нормы в 7 раз</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 17 Pro Max, 1 ТБ</div>
+                <div class="product-id">ID: 7624648960</div>
+                <div class="problem">Неадекватная цена контакта, выше нормы в 4 раза</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+            
+            <div class="product-card">
+                <div class="status-new">Новый</div>
+                <div class="product-title">iPhone 17 Pro Max, 2 ТБ</div>
+                <div class="product-id">ID: 7624627524</div>
+                <div class="problem">Неадекватная цена контакта, выше нормы в 10 раз</div>
+                <div class="market-note">Цена выше рыночной</div>
+            </div>
+        </div>
+        
+        <div class="highlight">
+            <strong>Вывод:</strong> Значительное количество товаров имеет завышенные цены.
+        </div>
+    </div>
+</body>
+</html>
